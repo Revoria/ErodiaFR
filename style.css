@@ -1,0 +1,687 @@
+/****************************
+*****Barre de Navigation*****
+*****************************/
+
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+/***********NAV BARRE**********/
+nav li:hover a {
+  padding: 12px 24px 10px 24px;
+}
+
+/* Réinitialiser les styles par défaut du navigateur */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+/* Retirer les pastilles avant les items des listes */
+ul {
+  list-style: none;
+}
+
+body {
+  background: #00010f;
+  font-family: "Advent Pro", sans-serif;
+}
+
+a {
+  color: #006dcc;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.menu-label,
+.menu-cb {
+  cursor: pointer;
+  appearance: none;
+  position: fixed;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: 30px;
+  z-index: 4;
+}
+
+.menu-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 90%;
+  max-width: 400px;
+  padding-top: 110px;
+  text-align: right;
+/* background: #fff; */
+background-color: #00010f;
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 1s linear;
+}
+
+.menu-item {
+  padding: 0.5em 20px;
+  border-top: 2px solid #008585
+}
+
+.menu-cb:checked ~ .menu-nav {
+  transform: translateX(0);
+}
+
+.menu-cote {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* ***************************
+******** Site internet *******
+******************************/
+
+/***video-background***/
+.TestFF123 {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+/*****Responsive de la Vidéo*****/
+@media {
+  TestFF123 {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-aspect-ratio: ) {
+    TestFF123 {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    color: #008585;
+  }
+  .textguild {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    color: #008585;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* **************** IMAGE PRINCIPALE ************* */
+  #imagePrincipale {
+    padding-top: 60px;
+    background: url(media/image-principale.JPG) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+  }
+  h1 {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: #008585;
+    font-size: 3em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px #008585;
+    animation: hallo 3s infinite alternate;
+  }
+
+  #premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #008585;
+    box-shadow: #008585;
+  }
+  h3 {
+    text-align: center;
+    color: #008585;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px #008585;
+  }
+  /* *************** PRESENTATION ********************** */
+  #presentation {
+    /* background-color: #7b0d0d; */
+    background: #00010f
+    padding: 10px 0px 100px 0;
+  }
+  #texteIntro {
+    padding: 0px 20%;
+  }
+  #TextRoster {
+    padding: 10px 0 px 20%;
+  }
+  /******Prestation******/
+  #prestations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 3%;
+  }
+  #textdecouvrir {
+    color: #008585;
+  }
+
+  .logocharte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imagelogocharte {
+    width: 350px;
+  }
+
+  /****Texte au dessus de l'image*****/
+  .imagesPrestations h4 {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 5px;
+    font-weight: 300;
+    color: #008585;
+  }
+  .imagesPrestations img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0, 135, 145, 0.7);
+  }
+
+  /****Transition image******/
+  .imagesPrestations img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
+
+  .imagesPrestations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /**********ROSTER1**********/
+  #prestations1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+  }
+  .imagesRoster1 h4 {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+  }
+  .imagesRoster1 img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px #008585;
+  }
+  .imagesRoster1 img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
+  /***************** TOURISME ***********************/
+  #tourisme {
+    height: 1500px;
+    background: #00010f
+    padding: 1px 2%;
+  }
+  #tourisme h2 {
+    padding-top: 100px;
+  }
+
+  #tourisme li {
+    margin: 65px 100px 0 100px;
+    height: 226px;
+    width: 55%;
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px #008585;
+  }
+  #tourisme p {
+    height: 45px;
+    width: 235px;
+    background: #00010f
+    float: right;
+    margin: 50px -180px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px rgba(90, 161, 43, 1);
+  }
+  #tourisme #chateau,
+  #tourisme #vignoble {
+    float: right;
+  }
+  #chateau p,
+  #vignoble p {
+    float: left;
+    background-color: cyan;
+    margin-left: -180px;
+    box-shadow: -4px 4px 0 1px rgba(15, 154, 156, 1);
+  }
+  /* ******************* FOOTER ******************** */
+  footer {
+    background: #00010f;
+    color: #00010f;
+    padding: 20px 0 10px 0;
+    text-align: center;
+  }
+  form {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  input,
+  textarea,
+  button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: "Advent Pro", sans-serif;
+    border-radius: 8px;
+  }
+  textarea {
+    height: 120px;
+    color: #008585;
+  }
+  #boutonEnvoyer {
+    font-size: 1.5em;
+    background-color: #00010f;
+  }
+  #boutonEnvoyer:hover {
+    background-color: #00010f;
+    color: #3a3a3a;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  #deuxiemeTrait {
+    height: 1px;
+    width: 75%;
+    background-color: #008585;
+    margin: 60px auto;
+  }
+  #TraitTrois {
+    height: 1px;
+    width: 75%;
+    background-color: #008585;
+    margin: 60px auto;
+  }
+  #TraitTextIntro {
+    height: 1px;
+    width: 50%;
+    background-color: #008585;
+    margin: 60px auto;
+  }
+  #copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+  }
+  #copyright {
+    text-align: left;
+    color: #008585;
+    width: 100%;
+    text-align: center;
+  }
+  #icons {
+    width: 50%;
+    text-align: right;
+  }
+  #icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: #008585;
+  }
+  #icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+  }
+
+  /********MESSAGE*******/
+  form {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  input,
+  textarea,
+  button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: "Advent Pro", sans-serif;
+    border-radius: 15px;
+  }
+  textarea {
+    height: 120px;
+    color: rgb(27, 27, 27);
+  }
+  #boutonEnvoyer {
+    font-size: 1.5em;
+    background-color: #00010f;
+  }
+  #boutonEnvoyer:hover {
+    background-color: #00010f;
+    color: #00010f;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  #Site {
+    color: #ffffff;
+  }
+  .Roster1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imageroster1 {
+    margin: 10px;
+    margin-top: 5px;
+  }
+  /**********Classes********/
+  .classes {
+    color: #ffffff;
+    text-shadow: #008585;
+    animation: hallo 3s infinite alternate;
+  }
+
+  /********* Build text ********/
+  .BuildTextclasses {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    color: #008585;
+    text-shadow: #008585;
+  }
+
+  /**********Youtube**********/
+  .videoyoutube {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Video0 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+
+  .Video1 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+
+  .Video2 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+
+  .Video3 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+
+  .Video4 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+
+  .Video5 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+
+  .Video6 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+
+  .Video7 {
+    margin: 20px;
+    margin-top: 15px;
+  }
+  /***********************************************/
+
+  * {
+    box-sizing: border-box;
+  }
+  .video-background {
+    background: #00010f;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+  }
+  .video-foreground,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  #vidtop-content {
+    top: 0;
+    color: #008585;
+  }
+  .vid-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #008585;
+    padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
+  }
+  .vid-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+  .vid-info a {
+    display: block;
+    color: #008585;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.6s background;
+    border-bottom: none;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  @media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-foreground {
+      width: 300%;
+      left: -100%;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .vid-info {
+      width: 50%;
+      padding: 0.5rem;
+    }
+    .vid-info h1 {
+      margin-bottom: 0.2rem;
+    }
+  }
+  @media all and (max-width: 500px) {
+    .vid-info .acronym {
+      display: none;
+    }
+  }
+
+  /****Histoire****/
+  .titrehistoire {
+    font-family: "Advent Pro", sans-serif;
+    color: #ffffff;
+ 
+  }
+
+  .bg57 {
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    justify-content: space-around;
+  }
+
+  .card {
+    display: inline-block;
+    width: 40%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff(255, 255, 255);
+    text-shadow: #008585;
+    justify-content: center;
+    box-shadow: 0 0 6px #008585;
+    animation: hallo 3s infinite alternate;
+    -webkit-animation: hallo 3s infinite;
+    font-family: "Raleway", sans-serif;
+  }
+
+  @keyframes hallo {
+    20% {
+      box-shadow: 0 0 15px #008585;
+    }
+    30%,
+    50% {
+      box-shadow: 0 0 16px #008585;
+    }
+
+    0%,
+    20% {
+      box-shadow: 0 0 15px #008585;
+    }
+    40%,
+    50% {
+      box-shadow: 0 0 16px #008585;
+    }
+    80%,
+    100% {
+      box-shadow: 0 0 15px #008585;
+    }
+  }
+
+  .titrecharte {
+    color: rgb(00, 85, 85);
+    text-shadow: #fcfcfc;
+    font-family: "Cardo", serif;
+  }
+}
+.textcharte {
+  padding: 2%;
+  color: #ffffff;
+  text-shadow: #008585;
+}
+
+.bg2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.charte20 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagecharte {
+  margin: 10px;
+  margin-top: 5px;
+}
+
+.logo20 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imagelogo20 {
+  width: 345px;
+  margin-left: -45px;
+  margin-top: 50px;
+
+@media screen and (max-width: 800px) {
+  nav {
+    background-color: red;
+  }
+}
+
+.menuburger {
+  width: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+
+.
+.Header_navbar-toggle-icons
+  Header_navbar-toggle-icons::before
+  Header_navbar-toggle-icons::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background: #000;
+  position: relative;
+}
+.Header_navbar-toggle-icons:before {
+  top: 10px;
+}
+.Header_navbar-toggle-icons:after {
+  top: -14px;
+}
+
+@media only screen and (max-width: 1246px) {
+  .Header_navbar-toggle {
+    display: flex;
+    z-index: 1000;
+  }
+
+  .table {
+    display: none;
+  }
+}
